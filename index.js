@@ -1,5 +1,10 @@
 let btn = document.querySelector('#btn');
 
-btn.addEventListener('click', () => {
+btn.addEventListener('toggole', () => {
     btn.innerText = "Thank you";
 });
+
+
+
+
+
