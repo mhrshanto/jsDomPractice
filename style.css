@@ -1,0 +1,32 @@
+ body {
+     position: relative;
+     height: 100vh;
+ }
+
+ .container {
+     margin: 0;
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .container2 {
+     margin: 0;
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+  .container3 {
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+ .container a {
+     display: flex;
+     justify-content: center;
+ }
