@@ -1,24 +1,11 @@
-let btn = document.querySelector('#btn');
+let container = document.getElementsByClassName('container')[0];
 
-btn.addEventListener('toggole', () => {
-    btn.innerText = "Thank you";
-});
-
-let button = document.getElementById('btn');
-
-button.setAttribute("href", "www.codesplanner.com");
-button.setAttribute("class", "hello_btn");
+let body = document.getElementsByTagName('body')[0];
 
 
+let header = document.createElement("h1");
+document.removeChild('h2')[0];
 
+header.innerText = "Hello Programmers";
 
-let heading = document.getElementById('heading');
-let subheading = document.getElementById('sub-heading');
-heading.addEventListener('click', () => {
-    heading.innerText = "How are you?"
-    subheading.remove();
-})
-
-
-
-
+body.appendChild(header);
