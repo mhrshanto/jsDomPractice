@@ -1,35 +1,12 @@
-let container = document.getElementsByClassName('container')[0]
-
-let heading = document.createElement('h2');
-
-heading.innerText = "Do you want to know our website URL?";
+let btn = document.getElementsByTagName('button')[0];
+let container = document.getElementsByClassName('container')[0];
 
 
-
-
-let button = document.createElement("button");
-let button2 = document.createElement("button");
-let text1 = "Yes"
-let text2 = "No"
-
-button.innerText = text1;
-button2.innerText = text2;
-
-function1 = () => {
-    let url = document.URL;
-
+btn.addEventListener('click', () => {
+    let inputValue = document.getElementById('name');
+    let showValue = inputValue.value;
     let text = document.createElement('p');
-    text.innerText = url;
-    container.appendChild(text)
-}
+    text.innerText = showValue;
 
-button.addEventListener('click', function1)
-
-
-
-
-
-// Append 
-container.appendChild(heading)
-container.appendChild(button)
-container.appendChild(button2)
+    container.appendChild(text);
+})
