@@ -10,3 +10,13 @@ btn.addEventListener('click', () => {
 
     container.appendChild(text);
 })
+
+// Form Validator
+
+function formValidator() {
+    let x = document.forms['myForm']['fname'].value;
+    if (x == "") {
+        alert("Please fill the name field")
+        return false;
+    }
+}
