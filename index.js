@@ -1,22 +1,25 @@
-let btn = document.getElementsByTagName('button')[0];
-let container = document.getElementsByClassName('container')[0];
+var link = document.getElementById('link');
+var container = document.getElementsByClassName('container')[0];
 
 
-btn.addEventListener('click', () => {
-    let inputValue = document.getElementById('name');
-    let showValue = inputValue.value;
-    let text = document.createElement('p');
-    text.innerText = showValue;
+console.log(link);
 
-    container.appendChild(text);
-})
+link.innerHTML = "Click Me"
+link.href = "https://codesplanner.com/"
+link.id = "ourid"
 
-// Form Validator
 
-function formValidator() {
-    let x = document.forms['myForm']['fname'].value;
-    if (x == "") {
-        alert("Please fill the name field")
-        return false;
-    }
-}
+link.style.fontSize = "50px"
+
+link.setAttribute("class", "myClass")
+link.setAttribute('target', '_blank')
+
+
+var Elem = document.createElement('h1');
+container.appendChild(Elem);
+
+console.log(Elem)
+
+Elem.innerHTML = "Hello Programmers!"
+
+
