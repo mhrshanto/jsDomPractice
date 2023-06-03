@@ -1,25 +1,14 @@
-var link = document.getElementById('link');
-var container = document.getElementsByClassName('container')[0];
-
-
-console.log(link);
-
+var link = document.getElementById('link')
 link.innerHTML = "Click Me"
-link.href = "https://codesplanner.com/"
-link.id = "ourid"
+link.href = "https://codesplanner.com"
+link.target = "_blank"
+link.style.color = "green"
+link.style.fontSize = "30px"
+link.setAttribute("class", "ourClass");
 
 
-link.style.fontSize = "50px"
-
-link.setAttribute("class", "myClass")
-link.setAttribute('target', '_blank')
-
-
-var Elem = document.createElement('h1');
-container.appendChild(Elem);
-
-console.log(Elem)
-
-Elem.innerHTML = "Hello Programmers!"
+var createElemrnt = document.createElement('h1');
+createElemrnt.innerHTML = "Hello Programmers!"
+document.body.appendChild(createElemrnt);
 
 

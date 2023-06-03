@@ -1,3 +1,4 @@
-.from-validator {
-    margin-top: 20px;
+.ourClass {
+    display: flex;
+    justify-content: center;
 }
