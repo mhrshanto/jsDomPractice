@@ -1,14 +1,14 @@
-var link = document.getElementById('link')
-link.innerHTML = "Click Me"
-link.href = "https://codesplanner.com"
-link.target = "_blank"
-link.style.color = "green"
-link.style.fontSize = "30px"
-link.setAttribute("class", "ourClass");
+var image = document.getElementsByTagName("img")[0];
+var btn1 = document.getElementsByTagName("button")[0];
+var btn2 = document.getElementsByTagName("button")[1];
 
+btn1.setAttribute("onclick", "previus()")
 
-var createElemrnt = document.createElement('h1');
-createElemrnt.innerHTML = "Hello Programmers!"
-document.body.appendChild(createElemrnt);
+btn2.setAttribute("onclick", "next()")
 
-
+function previus() {
+    image.src = "./img/SliderImage (2).jpg";
+}
+function next() {
+    image.src = "./img/SliderImage (4).jpg";
+}
