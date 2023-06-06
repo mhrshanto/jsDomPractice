@@ -2,3 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.container {
+    color: #ccc;
+    background-color: lime;
+}
+.container h1 {
+    text-align: center;
+}
