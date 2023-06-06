@@ -2,14 +2,3 @@
     margin: 0;
     padding: 0;
 }
-.container, .btn-area {
-    display: flex;
-    justify-content: center;
-}
-.btn-area button {
-    margin: 10px;
-    padding: 10px 20px;
-}
-img {
-    display: block;
-}
